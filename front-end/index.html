@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS Bacteria Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>ISS Bacteria Analysis</h1>
+            <p class="subtitle">Upload your CSV file to analyze bacteria data from ISS locations</p>
+
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 15V3M12 3L8 7M12 3L16 7" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L2 19C2 20.1046 2.89543 21 4 21L20 21C21.1046 21 22 20.1046 22 19V17" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <p class="drop-text">Drop your CSV file here</p>
+                <p class="browse-text">or click to browse</p>
+                <input type="file" id="fileInput" accept=".csv" hidden>
+                <button class="choose-file-btn" id="chooseFileBtn">Choose File</button>
+                <p class="file-name" id="fileName"></p>
+            </div>
+
+            <div class="format-info">
+                <p class="format-label">Expected CSV format:</p>
+                <code class="format-example">module,loc1,genus,species,Organism_Count</code>
+                <p class="format-note">Output will be a transposed pivot table with genus_species as columns and module_loc as rows</p>
+            </div>
+
+            <button class="submit-btn" id="submitBtn">Submit & Analyze</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

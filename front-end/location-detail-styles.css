@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f1f5f9;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #3b82f6;
+}
+
+/* Location Header */
+.location-header {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px 32px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-info {
+    flex: 1;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.summary {
+    font-size: 1rem;
+    color: #64748b;
+}
+
+.summary .highlight {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* Score Badge Container */
+.score-badge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.score-label {
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.score-badge {
+    background-color: #fef2f2;
+    border: 2px solid #fecaca;
+    border-radius: 8px;
+    padding: 12px 20px;
+}
+
+.score-badge .score-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #dc2626;
+}
+
+.score-badge.normal {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.score-badge.normal .score-value {
+    color: #3b82f6;
+}
+
+.anomaly-tag {
+    background-color: #dc2626;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* Loading State */
+.loading-state {
+    background-color: white;
+    border-radius: 12px;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #e2e8f0;
+    border-top-color: #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loading-state p {
+    font-size: 1.125rem;
+    color: #64748b;
+}
+
+/* Species Table */
+.threshold-panel {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.threshold-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.threshold-label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #64748b;
+    white-space: nowrap;
+}
+
+.threshold-slider {
+    flex: 1;
+    accent-color: #3b82f6;
+    height: 4px;
+    cursor: pointer;
+}
+
+.threshold-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+    min-width: 36px;
+    text-align: right;
+}
+
+.species-table {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 1fr 300px 180px;
+    padding: 16px 24px;
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.table-body {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Species Row */
+.species-row {
+    display: grid;
+    grid-template-columns: 1fr 300px 180px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #f1f5f9;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.species-row:hover {
+    background-color: #f8fafc;
+}
+
+.species-row.pathogen-alert {
+    background-color: #fef2f2;
+    border-left: 4px solid #dc2626;
+}
+
+.species-row.pathogen-alert:hover {
+    background-color: #fee2e2;
+}
+
+.species-row:last-child {
+    border-bottom: none;
+}
+
+/* Species Name */
+.species-name {
+    font-size: 1rem;
+    color: #1e293b;
+}
+
+/* Score Column */
+.col-score-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.species-score {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+    min-width: 50px;
+}
+
+.score-bar-container {
+    flex: 1;
+    height: 8px;
+    background-color: #fee2e2;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 200px;
+}
+
+.score-bar {
+    height: 100%;
+    background-color: #dc2626;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Status Column */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* environmental -> green */
+.status-badge.environmental {
+    background-color: #bbf7d0;
+    color: #14532d;
+}
+
+/* environmental (halotolerant) -> teal */
+.status-badge.environmental-halotolerant {
+    background-color: #99f6e4;
+    color: #134e4a;
+}
+
+/* fecal -> brown */
+.status-badge.fecal {
+    background-color: #fde68a;
+    color: #78350f;
+}
+
+/* food associated -> orange */
+.status-badge.food-associated {
+    background-color: #fed7aa;
+    color: #9a3412;
+}
+
+/* halophile -> blue */
+.status-badge.halophile {
+    background-color: #bae6fd;
+    color: #0c4a6e;
+}
+
+/* human associated -> amber */
+.status-badge.human-associated {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+/* human associated (oral) -> violet */
+.status-badge.human-associated-oral {
+    background-color: #ede9fe;
+    color: #4c1d95;
+}
+
+/* human associated (oral and testinal) -> pink */
+.status-badge.human-associated-oral-and-testinal {
+    background-color: #fce7f3;
+    color: #831843;
+}
+
+/* moisture -> indigo */
+.status-badge.moisture {
+    background-color: #e0e7ff;
+    color: #3730a3;
+}
+
+/* pathogen -> red */
+.status-badge.pathogen {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* unknown / unmatched */
+.status-badge.unknown {
+    background-color: #f1f5f9;
+    color: #64748b;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .location-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .score-badge-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .table-header,
+    .species-row {
+        grid-template-columns: 1fr 150px 140px;
+    }
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .table-header {
+        display: none;
+    }
+
+    .species-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .col-score-content {
+        width: 100%;
+    }
+
+    .score-bar-container {
+        max-width: 100%;
+        flex: 1;
+    }
+}

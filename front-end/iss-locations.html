@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS Locations - Bacteria Analysis</title>
+    <link rel="stylesheet" href="locations-styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link" onclick="sessionStorage.clear();">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Upload New Data
+        </a>
+
+        <div class="header">
+            <h1>ISS Locations</h1>
+            <p class="subtitle">Select a location to view bacteria analysis</p>
+        </div>
+
+        <div id="loadingState" class="loading-state">
+            <div class="spinner"></div>
+            <p>Analyzing bacteria data...</p>
+        </div>
+
+        <div id="errorState" class="error-state" style="display: none;">
+            <div class="error-icon">⚠️</div>
+            <p class="error-message" id="errorMessage"></p>
+            <button class="back-btn" onclick="window.location.href='index.html'">Back to Upload</button>
+        </div>
+
+        <div id="thresholdPanel" class="threshold-panel" style="display: none;">
+            <div class="threshold-row">
+                <label class="threshold-label">Anomaly Threshold</label>
+                <input type="range" id="thresholdSlider" min="0" max="1" step="0.01" value="0.80" class="threshold-slider" />
+                <span class="threshold-value" id="thresholdValue">0.80</span>
+            </div>
+        </div>
+
+        <div id="filterPanel" class="filter-panel" style="display: none;">
+            <div class="filter-input-row">
+                <div class="filter-input-wrapper">
+                    <input
+                        type="text"
+                        id="filterInput"
+                        class="filter-input"
+                        placeholder="Type a species name..."
+                        autocomplete="off"
+                    />
+                    <div id="filterSuggestions" class="filter-suggestions"></div>
+                </div>
+                <button id="includeBtn" class="filter-btn include-btn">+ Must Include</button>
+                <button id="excludeBtn" class="filter-btn exclude-btn">− Must Exclude</button>
+            </div>
+
+            <div id="activeFilters" class="active-filters"></div>
+
+            <div id="filterSummary" class="filter-summary"></div>
+        </div>
+
+        <div id="locationsContainer" class="locations-container" style="display: none;">
+            <!-- Location cards will be dynamically inserted here -->
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>No locations match the current filters.</p>
+            <button class="back-btn" onclick="clearAllFilters()">Clear Filters</button>
+        </div>
+    </div>
+
+    <script src="locations-script.js"></script>
+</body>
+</html>

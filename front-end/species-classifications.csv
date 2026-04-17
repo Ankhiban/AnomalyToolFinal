@@ -1,0 +1,439 @@
+Classification,genus_species
+human associated (oral and testinal),Abiotrophia defectiva
+environmental,Acidovorax wautersii
+environmental,Acinetobacter guillouiae
+environmental,Acinetobacter johnsonii
+environmental,Acinetobacter junii
+environmental,Acinetobacter lwoffii
+environmental,Acinetobacter oleivorans
+environmental,Acinetobacter pittii
+human associated ,Actinomyces dentalis
+human associated ,Actinomyces europaeus
+human associated ,Actinomyces graevenitzii
+human associated ,Actinomyces israelii
+human associated ,Actinomyces johnsonii
+human associated ,Actinomyces massiliensis
+human associated ,Actinomyces meyeri
+human associated ,Actinomyces naeslundii
+human associated ,Actinomyces neuii
+human associated ,Actinomyces odontolyticus
+human associated ,Actinomyces oris
+human associated ,Actinomyces timonensis
+human associated ,Actinomyces viscosus
+human associated ,Aerococcus urinae
+human associated ,Aerococcus urinaeequi
+human associated ,Aerococcus viridans
+human associated ,Aggregatibacter aphrophilus
+human associated ,Aggregatibacter segnis
+"halophile, enviornmental",Aliicoccus persicus
+environmental,Alishewanella agri
+environmental,Alishewanella fetalis
+human associated,Alloiococcus otitis
+human associated,Anaerococcus degeneri
+human associated,Anaerococcus hydrogenalis
+human associated,Anaerococcus lactolyticus
+human associated,Anaerococcus mediterraneensis
+human associated,Anaerococcus murdochii
+human associated,Anaerococcus nagyae
+human associated,Anaerococcus obesiensis
+human associated,Anaerococcus octavius
+human associated,Anaerococcus prevotii
+human associated,Anaerococcus provencensis
+human associated,Anaerococcus rubeinfantis
+human associated,Anaerococcus senegalensis
+human associated,Anaerococcus tetradius
+human associated,Anaerococcus vaginalis
+,Anaeroglobus geminatus
+,Anaerostipes hadrus
+,Anoxybacillus flavithermus
+,Atopobium parvulum
+,Bacillus aryabhattai
+,Bacillus australimaris
+,Bacillus circulans
+,Bacillus ginsengihumi
+,Bacillus horneckiae
+,Bacillus kochii
+,Bacillus megaterium
+,Bacillus safensis
+,Bacillus smithii
+,Bacillus toyonensis
+,Bacillus wiedmannii
+,Bacteroides coagulans
+,Bacteroides coprophilus
+,Bacteroides ovatus
+,Bacteroides stercoris
+,Bacteroides uniformis
+,Bacteroides vulgatus
+,Bergeyella zoohelcum
+,Blautia glucerasea
+,Blautia luti
+,Blautia obeum
+,Blautia stercoris
+,Blautia wexlerae
+,Bosea thiooxidans
+,Brachybacterium muris
+"environmental, moisture",Bradyrhizobium viridifuturi
+"environmental, human associated",Brevibacterium iodinum
+"environmental, human associated",Brevibacterium massiliense
+"environmental, human associated",Brevibacterium paucivorans
+"environmental, human associated",Brevibacterium pityocampae
+"environmental, human associated",Brevibacterium ravenspurgense
+"environmental, moisture",Burkholderia contaminans
+"environmental, moisture",Burkholderia lata
+,Butyricicoccus faecihominis
+human associated,Campylobacter concisus
+human associated,Campylobacter gracilis
+human associated,Campylobacter showae
+human associated,Campylobacter ureolyticus
+"human associated, capnophile",Capnocytophaga gingivalis
+"human associated, capnophile",Capnocytophaga granulosa
+"human associated, capnophile",Capnocytophaga leadbetteri
+"human associated, capnophile",Capnocytophaga sputigena
+human associated,Cardiobacterium hominis
+human associated,Cardiobacterium valvarum
+,Casaltella massiliensis
+,Catonella morbi
+,Centipeda periodontii
+,Chryseobacterium carnis
+,Chryseobacterium montanum
+,Chryseobacterium piscium
+"human associated, environmental",Citrobacter braakii
+"human associated, environmental",Citrobacter koseri
+"human associated, environmental",Citrobacter murliniae
+human associated ,Cloacibacterium haliotis
+,Cloacibacterium normanense
+human associated,Clostridium disporicum
+human associated,Clostridium saudiense
+,Comamonas jiangduensis
+,Coprococcus catus
+,Coprococcus comes
+,Coprococcus eutactus
+human associated,Corynebacterium accolens
+human associated,Corynebacterium amycolatum
+human associated,Corynebacterium appendicis
+human associated,Corynebacterium aquatimens
+human associated,Corynebacterium aurimucosum
+human associated,Corynebacterium confusum
+human associated,Corynebacterium coyleae
+human associated,Corynebacterium durum
+human associated,Corynebacterium glaucum
+human associated,Corynebacterium glucuronolyticum
+human associated,Corynebacterium ihumii
+human associated,Corynebacterium imitans
+human associated,Corynebacterium jeddahense
+human associated,Corynebacterium jeikeium
+human associated,Corynebacterium kroppenstedtii
+human associated,Corynebacterium lipophiloflavum
+human associated,Corynebacterium matruchotii
+human associated,Corynebacterium mucifaciens
+human associated,Corynebacterium pilbarense
+human associated,Corynebacterium pyruviciproducens
+human associated,Corynebacterium riegelii
+human associated,Corynebacterium sundsvallense
+human associated,Corynebacterium timonense
+human associated,Corynebacterium tuberculostearicum
+human associated,Corynebacterium tuscaniense
+human associated,Corynebacterium ureicelerivorans
+,Cronobacter zurichensis
+moisture,Cupriavidus metallidurans
+moisture,Curvibacter delicatus
+human associated,Cutibacterium acnes
+,Deinococcus proteolyticus
+,Deinococcus radiophilus
+,Delftia acidovorans
+,Dermabacter vaginalis
+,Dialister invisus
+,Dialister micraerophilus
+,Dialister pneumosintes
+,Dialister propionicifaciens
+,Dialister succinatiphilus
+,Dolosigranulum pigrum
+,Dorea formicigenerans
+,Dorea longicatena
+,Eikenella corrodens
+pathogen,Enterobacter aerogenes
+human associated,Enterobacter cancerogenus
+human associated,Enterobacter cloacae
+human associated,Enterobacter ludwigii
+human associated,Enterobacter tabaci
+human associated,Enterobacter xiangfangensis
+"pathogen, fecal",Enterococcus faecalis
+"pathogen, fecal",Enterococcus faecium
+,Eremococcus coleocola
+environmental ,Erwinia billingiae
+environmental,Erwinia tasmaniensis
+"pathogen, fecal",Escherichia fergusonii
+fecal,Escherichia hermannii
+human associated,Escherichia marmotae
+human associated,Eubacterium brachy
+human associated,Eubacterium coprostanoligenes
+human associated,Eubacterium eligens
+human associated,Eubacterium hallii
+human associated,Eubacterium infirmum
+human associated,Eubacterium oxidoreducens
+human associated,Eubacterium ramulus
+human associated,Eubacterium rectale
+human associated,Eubacterium siraeum
+human associated,Eubacterium sulci
+human associated,Eubacterium xylanophilum
+human associated,Eubacterium yurii
+environmental,Exiguobacterium aestuarii
+fecal,Ezakiella peruensis
+human associated,Facklamia hominis
+human associated,Facklamia ignava
+human associated,Facklamia languida
+human associated,Facklamia tabacinasalis
+fecal,Faecalibacterium prausnitzii
+human associated,Fastidiosipila sanguinis
+human associated,Fenollaria massiliensis
+human associated,Finegoldia magna
+fecal,Fusicatenibacter saccharivorans
+human associated (oral),Fusobacterium nucleatum
+human associated (oral),Fusobacterium periodonticum
+human associated ,Gemella haemolysans
+human associated ,Gemella morbillorum
+human associated ,Gemella sanguinis
+fecal,Gemmiger formicilis
+human associated,Granulicatella adiacens
+human associated,Granulicatella elegans
+human associated,Haemophilus haemolyticus
+human associated,Haemophilus parahaemolyticus
+human associated,Haemophilus parainfluenzae
+human associated,Haemophilus paraphrohaemolyticus
+human associated,Haemophilus pittmaniae
+human associated,Haemophilus sputorum
+environmental ,Hafnia psychrotolerans
+halophile,Halomonas muralis
+human associated,Helcococcus seattlensis
+human associated,Helcococcus sueciensis
+human associated,Holdemanella biformis
+environmental,Hydrogenophaga caeni
+human associated,Ignavigranum ruoffiae
+human associated,Ileibacterium massiliense
+fecal,Intestinibacter bartlettii
+environmental (halotolerant),Jeotgalicoccus huakuii
+environmental,Jeotgalicoccus psychrophilus
+human associated,Kingella denitrificans
+human associated,Kingella oralis
+pathogen,Klebsiella aerogenes
+pathogen,Klebsiella pneumoniae
+environmental (halotolerant),Kocuria marina
+human associated,Lachnoanaerobaculum orale
+human associated,Lachnoanaerobaculum saburreum
+human associated,Lachnoanaerobaculum umeaense
+human associated,Lachnoclostridium pacaense
+human associated,Lactobacillus acidipiscis
+human associated,Lactobacillus acidophilus
+human associated,Lactobacillus animalis
+human associated,Lactobacillus crispatus
+food associated,Lactobacillus curvatus
+food associated,Lactobacillus delbrueckii
+food associated,Lactobacillus helveticus
+human associated,Lactobacillus iners
+human associated,Lactobacillus jensenii
+food associated,Lactobacillus paracasei
+food associated,Lactobacillus pentosus
+food associated,Lactobacillus rhamnosus
+food associated ,Lactobacillus rogosae
+food associated,Lactobacillus sakei
+human associated,Lactobacillus vaginalis
+food associated,Lactobacillus versmoldensis
+food associated,Lactococcus lactis
+,Lautropia mirabilis
+,Lawsonella clevelandensis
+,Leclercia adecarboxylata
+,Leptotrichia buccalis
+,Leptotrichia goodfellowii
+,Leptotrichia hofstadii
+,Leptotrichia trevisanii
+,Leptotrichia wadei
+,Leuconostoc mesenteroides
+,Limnohabitans parvus
+,Lysinibacillus chungkukjangi
+,Massilia suwonensis
+,Megasphaera micronuciformis
+,Methylibium petroleiphilum
+moisture,Methylobacterium lusitanum
+moisture,Methylobacterium radiotolerans
+moisture,Methylobacterium rhodesianum
+,Methylotenera mobilis
+,Methylotenera versatilis
+,Methylovorus glucosotrophus
+,Microbacterium oxydans
+human associated,Micrococcus luteus
+human associated,Micrococcus terreus
+human associated,Micrococcus yunnanensis
+,Mogibacterium neglectum
+human associated,Moraxella atlantae
+human associated,Moraxella nonliquefaciens
+human associated,Moraxella osloensis
+,Murdochiella massiliensis
+,Nakamurella endophytica
+,Negativibacillus massiliensis
+,Negativicoccus massiliensis
+,Neglecta timonensis
+human associated,Neisseria bacilliformis
+human associated,Neisseria cinerea
+human associated,Neisseria elongata
+human associated,Neisseria macacae
+human associated,Neisseria mucosa
+human associated,Neisseria oralis
+human associated,Neisseria perflava
+human associated,Neisseria sicca
+,Novosphingobium guangzhouense
+,Olegusella massiliensis
+,Oribacterium asaccharolyticum
+,Oribacterium parvum
+,Ottowia beijingensis
+human associated,Pantoea agglomerans
+human associated,Pantoea allii
+human associated,Pantoea ananatis
+human associated,Pantoea cypripedii
+human associated,Pantoea dispersa
+human associated,Pantoea gaviniae
+human associated,Pantoea intestinalis
+,Paracoccus chinensis
+,Paracoccus sediminis
+,Paracoccus yeei
+,Parvimonas micra
+,Pectobacterium carotovorum
+,Pediococcus acidilactici
+,Peptoniphilus coxii
+,Peptoniphilus duerdenii
+,Peptoniphilus gorbachii
+,Peptoniphilus grossensis
+,Peptoniphilus harei
+,Peptoniphilus lacrimalis
+,Peptoniphilus obesi
+,Peptostreptococcus anaerobius
+,Peptostreptococcus stomatis
+,Phascolarctobacterium faecium
+,Phascolarctobacterium succinatutens
+,Piscinibacter aquaticus
+,Polynucleobacter cosmopolitanus
+,Porphyromonas bennonis
+,Porphyromonas catoniae
+,Porphyromonas pasteri
+,Porphyromonas somerae
+human associated,Prevotella amnii
+human associated,Prevotella bivia
+human associated,Prevotella copri
+human associated,Prevotella corporis
+human associated,Prevotella disiens
+human associated,Prevotella histicola
+human associated,Prevotella jejuni
+human associated,Prevotella loescheii
+human associated,Prevotella melaninogenica
+human associated,Prevotella nanceiensis
+human associated,Prevotella oris
+human associated,Prevotella pallens
+human associated,Prevotella salivae
+human associated,Prevotella timonensis
+human associated,Prevotella veroralis
+human associated,Propionibacterium avidum
+human associated,Propionibacterium granulosum
+human associated,Propionibacterium namnetense
+human associated,Propionimicrobium lymphophilum
+,Proteus mirabilis
+,Pseudomonas azotoformans
+,Pseudomonas baetica
+,Pseudomonas benzenivorans
+,Pseudomonas costantinii
+,Pseudomonas cremoricolorata
+,Pseudomonas fluorescens
+,Pseudomonas fulva
+,Pseudomonas guguanensis
+,Pseudomonas monteilii
+,Pseudomonas moraviensis
+,Pseudomonas parafulva
+,Pseudomonas plecoglossicida
+,Pseudomonas poae
+,Pseudomonas psychrotolerans
+,Pseudomonas putida
+,Pseudomonas rhodesiae
+,Pseudomonas synxantha
+,Pseudomonas trivialis
+,Pseudomonas weihenstephanensis
+moisture,Ralstonia pickettii
+,Romboutsia timonensis
+,Roseburia faecis
+,Roseburia hominis
+,Rothia dentocariosa
+,Rothia mucilaginosa
+,Ruminococcus bromii
+,Ruminococcus callidus
+,Ruminococcus faecis
+,Ruminococcus lactaris
+halophile,Salinicoccus alkaliphilus
+halophile,Salinicoccus halitifaciens
+halophile,Salinicoccus kekensis
+halophile,Salinicoccus qingdaonensis
+pathogen,Salmonella enterica
+human associated,Selenomonas artemidis
+human associated,Selenomonas dianae
+human associated,Selenomonas flueggei
+human associated,Selenomonas infelix
+human associated,Selenomonas noxia
+human associated,Selenomonas sputigena
+,Shewanella xiamenensis
+pathogen,Shigella flexneri
+pathogen,Shigella sonnei
+,Shuttleworthia satelles
+,Skermanella rosea
+moisture,Sphingomonas alpina
+moisture,Sphingomonas sanguinis
+moisture,Sphingomonas zeae
+pathogen,Staphylococcus aureus
+human associated,Staphylococcus auricularis
+human associated,Staphylococcus capitis
+human associated,Staphylococcus caprae
+human associated,Staphylococcus carnosus
+human associated,Staphylococcus cohnii
+human associated,Staphylococcus devriesei
+human associated,Staphylococcus epidermidis
+human associated,Staphylococcus equorum
+human associated,Staphylococcus gallinarum
+human associated,Staphylococcus haemolyticus
+human associated,Staphylococcus hominis
+pathogen,Staphylococcus lugdunensis
+human associated,Staphylococcus pasteuri
+human associated,Staphylococcus petrasii
+human associated,Staphylococcus pettenkoferi
+human associated,Staphylococcus saccharolyticus
+human associated,Staphylococcus saprophyticus
+human associated,Staphylococcus schleiferi
+human associated,Staphylococcus simulans
+human associated,Staphylococcus warneri
+,Stomatobaculum longum
+human associated,Streptococcus anginosus
+human associated,Streptococcus australis
+human associated,Streptococcus constellatus
+human associated,Streptococcus cristatus
+human associated,Streptococcus dentisani
+human associated,Streptococcus gordonii
+human associated,Streptococcus infantis
+human associated,Streptococcus intermedius
+human associated,Streptococcus mitis
+human associated,Streptococcus mutans
+human associated,Streptococcus oralis
+human associated,Streptococcus parasanguinis
+human associated,Streptococcus pneumoniae
+human associated,Streptococcus pseudopneumoniae
+human associated,Streptococcus rubneri
+human associated,Streptococcus salivarius
+human associated,Streptococcus sanguinis
+human associated,Streptococcus thermophilus
+human associated,Streptococcus tigurinus
+human associated,Streptococcus vestibularis
+halophile,Tetragenococcus halophilus
+environmental,Thiobacillus denitrificans
+,Trichococcus pasteurii
+,Ureibacillus thermosphaericus
+,Varibaculum cambriense
+,Veillonella atypica
+,Veillonella criceti
+,Veillonella dispar
+,Veillonella parvula
+,Veillonella ratti
+,Veillonella tobetsuensis
+,Yokenella regensburgei

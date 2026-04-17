@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Details - Bacteria Analysis</title>
+    <link rel="stylesheet" href="location-detail-styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="iss-locations.html" class="back-link" id="backLink">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to Locations
+        </a>
+
+        <div class="location-header">
+            <div class="header-info">
+                <h1 id="locationName">Loading...</h1>
+                <p class="summary" id="locationSummary"></p>
+            </div>
+            <div class="score-badge-container">
+                <span class="score-label">Location Anomaly Score</span>
+                <div class="score-badge" id="scoreBadge">
+                    <span class="score-value" id="scoreValue">0.000</span>
+                </div>
+                <div class="anomaly-tag" id="anomalyTag" style="display: none;">Anomaly</div>
+            </div>
+        </div>
+
+        <div id="loadingState" class="loading-state">
+            <div class="spinner"></div>
+            <p>Loading species data...</p>
+        </div>
+
+        <div id="speciesTable" class="species-table" style="display: none;">
+            <div class="table-header">
+                <div class="col-species">Genus/Species</div>
+                <div class="col-score">Anomaly Score</div>
+                <div class="col-status">Status</div>
+            </div>
+            <div class="table-body" id="tableBody">
+                <!-- Species rows will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="location-detail-script.js"></script>
+</body>
+</html>
