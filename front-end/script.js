@@ -9,7 +9,7 @@
  * This avoids passing the file through URL parameters and keeps the upload
  * experience fast regardless of file size.
  *
- * Required CSV columns: module, loc1, genus, species, Organism_Count
+ * Required CSV columns: module, loc1, genus, species, Organism_Count, Sample.Collection.Date
  */
 
 const uploadArea = document.getElementById('uploadArea');

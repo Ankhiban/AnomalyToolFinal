@@ -12,7 +12,7 @@ Endpoints:
     GET  /location-details/<id> — Returns cached species-level detail for one location
     GET  /health             — Health check
 
-Expected input CSV columns: module, loc1, genus, species, Organism_Count
+Expected input CSV columns: module, loc1, genus, species, Organism_Count, Sample.Collection.Date
 """
 
 from flask import Flask, request, send_file, jsonify
@@ -46,13 +46,16 @@ def build_species_location_matrix(df: pd.DataFrame) -> pd.DataFrame:
     """
     Transform raw organism count records into a locations × species pivot matrix.
 
-    Combines 'module' and 'loc1' into a single location identifier (e.g. 'Node1_Deck'),
-    combines 'genus' and 'species' into a taxon name (e.g. 'Staphylococcus aureus'),
-    then pivots so rows are locations and columns are species, with organism counts
-    as values. Missing species at a location are filled with 0.
+    Combines 'module', 'loc1', and 'Sample.Collection.Date' into a single location
+    identifier (e.g. 'Node1_Deck_2019-04-01'), combines 'genus' and 'species' into a
+    taxon name (e.g. 'Staphylococcus aureus'), then pivots so rows are locations and
+    columns are species, with organism counts as values. Including the date ensures
+    the same physical location sampled on different dates is treated as a separate row
+    rather than being merged together.
 
     Args:
-        df: Raw input DataFrame with columns: module, loc1, genus, species, Organism_Count
+        df: Raw input DataFrame with columns:
+            module, loc1, genus, species, Organism_Count, Sample.Collection.Date
 
     Returns:
         DataFrame with shape (n_locations, n_species), sorted by both axes
@@ -67,14 +70,24 @@ def build_species_location_matrix(df: pd.DataFrame) -> pd.DataFrame:
         """Strip, collapse internal whitespace, and capitalize first letter only."""
         return s.astype(str).str.strip().str.replace(r'\s+', ' ', regex=True).str.capitalize()
 
+    def normalize_date(s):
+        """Parse dates and format as YYYY-MM-DD; fall back to raw value (slashes replaced) if unparseable."""
+        parsed = pd.to_datetime(s, errors='coerce')
+        formatted = parsed.dt.strftime('%Y-%m-%d')
+        raw_fallback = s.astype(str).str.strip().str.replace('/', '-', regex=False)
+        return formatted.where(formatted.notna(), raw_fallback)
+
     df['module'] = normalize_location(df['module'])
     df['loc1'] = normalize_location(df['loc1'])
+    df['date_key'] = normalize_date(df['Sample.Collection.Date'])
 
-    # If loc1 is missing or blank, use just the module name as the location ID
+    # Build location key: module[_loc1]_date
     df['module_loc'] = df.apply(
         lambda row: row['module'] if row['loc1'] in ('', 'NAN', 'NONE') else row['module'] + "_" + row['loc1'],
         axis=1
     )
+    df['module_loc'] = df['module_loc'] + "_" + df['date_key']
+
     df['genus_species'] = normalize_taxon(df['genus']) + " " + normalize_taxon(df['species'])
 
     matrix = df.pivot_table(
@@ -114,7 +127,7 @@ def process_csv():
 
         df = pd.read_csv(file)
 
-        required_columns = ['module', 'loc1', 'genus', 'species', 'Organism_Count']
+        required_columns = ['module', 'loc1', 'genus', 'species', 'Organism_Count', 'Sample.Collection.Date']
         missing_columns = [col for col in required_columns if col not in df.columns]
         if missing_columns:
             return jsonify({
@@ -187,7 +200,7 @@ def process_csv_json():
 
         df = pd.read_csv(file)
 
-        required_columns = ['module', 'loc1', 'genus', 'species', 'Organism_Count']
+        required_columns = ['module', 'loc1', 'genus', 'species', 'Organism_Count', 'Sample.Collection.Date']
         missing_columns = [col for col in required_columns if col not in df.columns]
         if missing_columns:
             return jsonify({
